@@ -166,9 +166,8 @@ identify who implemented each class or test file.
 | LinkedChain.java | Veronica Munoz Ospina; Xinchen Zhou (Soren) | Veronica defined the generic contract and planned reuse for songs and playlists; Soren diagrammed collection relationships. |
 | SongTest.java | Al-Farouq Mohamed | Planned expected results for normal, invalid-input, and boundary cases; used GenAI assistance to draft test code. |
 | PlaylistTest.java | Al-Farouq Mohamed | Planned expected results for normal, invalid-input, and boundary cases; used GenAI assistance to draft test code. |
-| PlaylistManagerTest.java | Al-Farouq Mohamed | Contributed the method-by-method test plan, including valid and invalid inputs. |
-| UserInputTest.java | Al-Farouq Mohamed | Designed tests for validation and error handling, including blank, null, nonnumeric, and unsupported input. |
-| LinkedChainTest.java | Al-Farouq Mohamed | Contributed application-wide test planning for valid inputs, empty collections, and null-related cases. |
+| PlaylistManagerTest.java | Veronica Munoz Ospina | Contributed the method-by-method test plan, including valid and invalid inputs. |
+| UserInputTest.java | Xinchen Zhou (Soren) | Designed tests for validation and error handling, including blank, null, nonnumeric, and unsupported input. |
 
 ### GenAI Assistance
 
