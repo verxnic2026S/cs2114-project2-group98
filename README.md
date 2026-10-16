@@ -143,10 +143,6 @@ operations while application classes implement playlist behavior.
 - Whether application method complexities match the original estimates.
 - Whether every public method has the required test coverage.
 
-### GenAI Assistance
-
-ChatGPT helped organize the documentation around the rubric.
-
 ## Scope
 
 | Feature | Status |
@@ -154,3 +150,33 @@ ChatGPT helped organize the documentation around the rubric.
 | Shuffle | Dropped from the current plan |
 | LRU system | Dropped from the current plan |
 | Real audio playback | Outside this class-project scope |
+
+## Attribution
+
+The contributions below describe design and test planning. They do not
+identify who implemented each class or test file.
+
+| Class or test file | Contributor(s) | Contribution |
+|---|---|---|
+| Song.java | Veronica Munoz Ospina; Xinchen Zhou (Soren); Al-Farouq Mohamed | Veronica designed the fields and class structure; Soren designed method signatures; Al-Farouq planned normal and invalid-input tests. |
+| Playlist.java | Veronica Munoz Ospina; Xinchen Zhou (Soren); Al-Farouq Mohamed | Veronica designed song storage using LinkedChain<Song>; Soren designed method signatures and diagrammed class relationships; Al-Farouq planned normal and boundary tests. |
+| PlaylistManager.java | Veronica Munoz Ospina; Xinchen Zhou (Soren); Al-Farouq Mohamed | Veronica designed playlist storage using LinkedChain<Playlist>; Soren designed method signatures and diagrammed class relationships; Al-Farouq planned normal and invalid-input tests. |
+| UserInput.java | Xinchen Zhou (Soren); Al-Farouq Mohamed | Soren designed method signatures and diagrammed input handling; Al-Farouq designed validation, exception handling, and the test plan. |
+| SongLinkApp.java | Xinchen Zhou (Soren) | Contributed application-wide method-signature design and system-diagram planning. |
+| LinkedChain.java | Veronica Munoz Ospina; Xinchen Zhou (Soren) | Veronica defined the generic contract and planned reuse for songs and playlists; Soren diagrammed collection relationships. |
+| SongTest.java | Al-Farouq Mohamed | Planned expected results for normal, invalid-input, and boundary cases; used GenAI assistance to draft test code. |
+| PlaylistTest.java | Al-Farouq Mohamed | Planned expected results for normal, invalid-input, and boundary cases; used GenAI assistance to draft test code. |
+| PlaylistManagerTest.java | Al-Farouq Mohamed | Contributed the method-by-method test plan, including valid and invalid inputs. |
+| UserInputTest.java | Al-Farouq Mohamed | Designed tests for validation and error handling, including blank, null, nonnumeric, and unsupported input. |
+| LinkedChainTest.java | Al-Farouq Mohamed | Contributed application-wide test planning for valid inputs, empty collections, and null-related cases. |
+
+### GenAI Assistance
+
+Veronica Munoz Ospina used GenAI to draft a short class-design
+description explaining the layering of LinkedChain<Song> within
+Playlist and LinkedChain<Playlist> within PlaylistManager.
+
+Al-Farouq Mohamed used GenAI to draft possible invalid inputs for
+the test plan and to help generate Song and Playlist test code.
+
+ChatGPT also helped organize and revise this README.
