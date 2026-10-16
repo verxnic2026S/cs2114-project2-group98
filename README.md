@@ -169,6 +169,16 @@ identify who implemented each class or test file.
 | PlaylistManagerTest.java | Veronica Munoz Ospina | Contributed the method-by-method test plan, including valid and invalid inputs. |
 | UserInputTest.java | Xinchen Zhou (Soren) | Designed tests for validation and error handling, including blank, null, nonnumeric, and unsupported input. |
 
+## Next Steps
+
+1. Compile all application classes and verify the complete MVP path works.
+2. Confirm that songs and playlists use the same generic LinkedChain class through its public methods.
+3. Finalize duplicate-name rules, playback wraparound, and playback behavior after removing a song.
+4. Verify that invalid input receives the expected response without crashing the application.
+5. Complete and run JUnit tests, including normal cases, bad inputs, empty collections, and removing missing items.
+6. Review application-method time complexities and compare them with the specification.
+7. Update the reflection to explain changes, remaining issues, and unresolved questions.
+
 ### GenAI Assistance
 
 Veronica Munoz Ospina used GenAI to draft a short class-design
