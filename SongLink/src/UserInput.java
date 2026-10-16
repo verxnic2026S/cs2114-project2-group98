@@ -47,7 +47,7 @@ public class UserInput
      */
     private void displayMenu() {
         System.out.println();
-        System.out.println("===== SongLink Menu =====");
+        System.out.println("===== Playlist Menu =====");
         System.out.println("1. Create Playlist");
         System.out.println("2. Remove Playlist by Name");
         System.out.println("3. Remove Most Recently Added Playlist");
